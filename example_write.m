@@ -16,7 +16,7 @@ data_size = [batches, imgs_per_batch, img_size(1), img_size(2)];
 
 
 %% Create data to be saved
-data0 = rand(data_size) + 1j * rand(data_size);
+data0 = rand(data_size, 'single');
 data1 = rand(data_size, 'single');
 date = string(datetime('now'));
 scalar = 10;
